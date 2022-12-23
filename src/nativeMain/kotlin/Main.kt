@@ -1,35 +1,45 @@
 fun main() {
-    println("Hello, Kotlin/Native!")
+    // Arithmetic operations
+    val a = 10
+    val b = 20
+    val sum = a + b
+    val difference = a - b
+    val product = a * b
+    val quotient = a / b
+    val remainder = a % b
 
-        // Boolean data type
-        var isTrue: Boolean = true
-        var isFalse: Boolean = false
+    println("Sum: $sum")
+    println("Difference: $difference")
+    println("Product: $product")
+    println("Quotient: $quotient")
+    println("Remainder: $remainder")
 
-        // Numeric data types
-        var a: Byte = 127 // 8-bit signed integer
-        var b: Short = 32767 // 16-bit signed integer
-        var c: Int = 2147483647 // 32-bit signed integer
-        var d: Long = 9223372036854775807 // 64-bit signed integer
-        var e: Float = 3.14f // 32-bit floating point number
-        var f: Double = 3.14159265358979323846 // 64-bit floating point number
+    // Comparison operations
+    val c = 30
+    val isEqual = (a == c)
+    val isNotEqual = (a != c)
+    val isGreaterThan = (a > c)
+    val isLessThan = (a < c)
+    val isGreaterThanOrEqual = (a >= c)
+    val isLessThanOrEqual = (a <= c)
 
-        // Char data type
-        var g: Char = 'A' // Single Unicode character
+    println("a is equal to c: $isEqual")
+    println("a is not equal to c: $isNotEqual")
+    println("a is greater than c: $isGreaterThan")
+    println("a is less than c: $isLessThan")
+    println("a is greater than or equal to c: $isGreaterThanOrEqual")
+    println("a is less than or equal to c: $isLessThanOrEqual")
 
-        // String data type
-        var h: String = "Hello, world!" // Sequence of characters
+    // Logical operations
+    val d = true
+    val e = false
+    val f = !d
+    val g = (d && e)
+    val h = (d || e)
 
-
-    // Use the variables
-    println(isTrue)
-    println(isFalse)
-    println(a)
-    println(b)
-    println(c)
-    println(d)
-    println(e)
-    println(f)
-    println(g)
-    println(h)
+    println("d: $d")
+    println("e: $e")
+    println("f (not d): $f")
+    println("g (d and e): $g")
+    println("h (d or e): $h")
 }
-
